@@ -35,6 +35,8 @@ public class CodeTestSpec {
     @Test
     public void findWordCount_returnsExpectedResult() {
         assertEquals(1, CodeTest.findWordCount("wonderful looking", "looking"));
+        assertEquals(0, CodeTest.findWordCount("wonderful world", "looking"));
+        assertEquals(2, CodeTest.findWordCount("humpty dumpty sat on a wall humpty dumpty had a great fall ", "humpty"));
     }
 
     @Test
@@ -44,7 +46,7 @@ public class CodeTestSpec {
 
     @Test
     public void writeContentsToConsole_returnsExpectedResult() {
-
+        CodeTest.writeContentsToConsole();
     }
 
     @Test
