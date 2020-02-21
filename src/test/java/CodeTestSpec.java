@@ -127,10 +127,10 @@ public class CodeTestSpec {
 
     @Test
     public void puzzle_returnsExpectedResult() {
-        assertEquals("enter random sequence of numbers, e.g '1,3,9,0,2,2,4,2'\n1,3,5,5,'Snap'\n", runPuzzle("1,3,5,5"));
-        assertEquals("enter random sequence of numbers, e.g '1,3,9,0,2,2,4,2'\n1,1,'Snap'\n", runPuzzle("1,1"));
-        assertEquals("enter random sequence of numbers, e.g '1,3,9,0,2,2,4,2'\n1,2,1\n", runPuzzle("1,2,1"));
-        assertEquals("enter random sequence of numbers, e.g '1,3,9,0,2,2,4,2'\n1,2,3,3,'Snap',4,4,'Snap',5,2\n", runPuzzle("1,2,3,3,4,4,5,2"));
+        assertEquals("enter random sequence of numbers, e.g '1,3,9,0,2,2,4,2'...\n1,3,5,5,'Snap'\n", runPuzzle("1,3,5,5"));
+        assertEquals("enter random sequence of numbers, e.g '1,3,9,0,2,2,4,2'...\n1,1,'Snap'\n", runPuzzle("1,1"));
+        assertEquals("enter random sequence of numbers, e.g '1,3,9,0,2,2,4,2'...\n1,2,1\n", runPuzzle("1,2,1"));
+        assertEquals("enter random sequence of numbers, e.g '1,3,9,0,2,2,4,2'...\n1,2,3,3,'Snap',4,4,'Snap',5,2\n", runPuzzle("1,2,3,3,4,4,5,2"));
     }
 
 
