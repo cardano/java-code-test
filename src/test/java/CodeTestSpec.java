@@ -83,7 +83,7 @@ public class CodeTestSpec {
         try {
             System.clearProperty("aProperty");
             CodeTest.handleInvalidArgument();
-            throw new RuntimeException("handleInvalidArgument completed successfully");
+            fail("handleInvalidArgument completed successfully");
         } catch (IllegalArgumentException e) {
             assertEquals("missing property 'aProperty'", e.getMessage());
         }
@@ -91,7 +91,7 @@ public class CodeTestSpec {
         try {
             System.setProperty("aProperty", "a");
             CodeTest.handleInvalidArgument();
-            throw new RuntimeException("handleInvalidArgument completed successfully");
+            fail("handleInvalidArgument completed successfully");
         } catch (IllegalArgumentException e) {
             assertEquals("invalid value for 'aProperty', expected 'aProperty': a", e.getMessage());
         }
